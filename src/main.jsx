@@ -1,7 +1,7 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import{createRoot}from'react-dom/client';
 import{createClient}from'@supabase/supabase-js';
-import{Search,ShoppingBag,Heart,UserRound,ArrowRight,Truck,ShieldCheck,PackageCheck,Plus,Minus,X,LayoutDashboard,Trash2,Star,SlidersHorizontal,Menu,Sparkles,ChevronRight,MapPin,Gift,Tag,RotateCcw,HelpCircle,Bell,Scale,Eye,Clock3,CheckCircle2,Box,LogIn,LogOut,Wallet,TicketPercent,Store,Filter,Share2,Copy,MessageCircle,ChevronDown,Mic,Video,Languages,Play,Square}from'lucide-react';
+import{Search,ShoppingBag,Heart,UserRound,ArrowRight,Truck,ShieldCheck,PackageCheck,Plus,Minus,X,LayoutDashboard,Trash2,Star,SlidersHorizontal,Menu,Sparkles,ChevronRight,MapPin,Gift,Tag,RotateCcw,HelpCircle,Bell,Scale,Eye,Clock3,CheckCircle2,Box,LogIn,LogOut,Wallet,TicketPercent,Store,Filter,Share2,Copy,MessageCircle,ChevronDown,Mic,Video,Languages,Play,Square,Images,RotateCw}from'lucide-react';
 import'./style.css';
 const url=import.meta.env.VITE_SUPABASE_URL,key=import.meta.env.VITE_SUPABASE_ANON_KEY;const db=url&&key&&!url.includes('YOUR_PROJECT')?createClient(url,key):null;
 const seed=[
