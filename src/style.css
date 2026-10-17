@@ -149,3 +149,85 @@ header{height:64px;padding:0 10px;gap:5px}header .brand{font-size:19px;gap:5px}h
 .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.product{padding:6px 7px 10px}.photo{height:clamp(145px,48vw,210px)}.product-title{font-size:11px;min-height:30px}.product .desc{font-size:9px;min-height:27px}.price b{font-size:13px}.price del{font-size:9px}.price span{font-size:9px}.delivery-note{font-size:8px}.quick{font-size:9px;padding:8px}.tag{font-size:7px}
 .recent-section{margin:0 8px 8px;padding:13px}.recent-row{grid-template-columns:repeat(2,minmax(0,1fr))}.recent-row button{padding:9px}.newsletter{margin:0 8px 12px;padding:18px}.newsletter h2{font-size:21px}footer{padding:24px 14px 14px;gap:12px}footer>p{font-size:10px}.footlinks{gap:8px}.footlinks button{font-size:9px}.subpage{margin:8px;padding:22px 13px}.subpage h1{font-size:32px}.compare-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+
+/* Shopora marketplace pass: denser, utility-first retail layout inspired by large Indian marketplaces. */
+:root{font-family:Arial,Helvetica,sans-serif;color:#212121;background:#f1f3f6;--navy:#2874f0;--line:#e0e0e0;--gold:#ffe500;--serif:Arial,Helvetica,sans-serif}
+body{background:#f1f3f6;color:#212121}
+.announce{height:27px;background:#172337;color:#fff;font-size:10px;letter-spacing:.02em}
+header{height:64px;padding:0 max(16px,calc((100vw - 1240px)/2));gap:18px;background:#2874f0;color:#fff;border:0;box-shadow:0 2px 5px #0002}
+.brand{color:#fff;font-size:23px;letter-spacing:-.8px;gap:7px}
+.brand .mark{width:29px;height:29px;background:#ffe500;color:#2874f0;border-radius:3px;font:italic 24px Arial}
+.brand small{color:#e8f0ff;font-size:7px;letter-spacing:.8px}
+header nav{gap:16px}
+header nav button{color:#fff;font-size:12px;font-weight:600;white-space:nowrap}
+header nav button:hover{color:#ffe500}
+.actions{gap:8px}
+.search{width:clamp(200px,27vw,440px);height:38px;background:#fff;border:0;border-radius:2px;padding:0 11px;color:#2874f0}
+.search input{font-size:13px;color:#212121}
+.search input::placeholder{color:#878787}
+.voice-language{max-width:84px;height:34px;background:#fff;border:0;border-radius:2px;color:#2874f0;font-size:11px}
+.icon{color:#fff}
+.bag{background:#fff;color:#2874f0;border-radius:2px;padding:10px 12px;font-weight:700}
+.bag b{background:#ffe500;color:#172337}
+.hamb{color:#fff}
+.app>main{max-width:1400px;margin:0 auto;padding:12px 0 28px;background:#f1f3f6}
+.category-strip{margin:0 12px 12px;padding:12px 18px;border-radius:2px;box-shadow:0 1px 2px #0000001a;gap:8px}
+.category-strip button{gap:7px;flex-direction:column;color:#212121}
+.category-strip button span{width:54px;height:54px;border-radius:50%;background:#f5f7fa;font-size:30px}
+.category-strip button b{font-size:12px;font-weight:600}
+.category-strip button:hover b{color:#2874f0}
+.hero{margin:0 12px 12px;min-height:250px;grid-template-columns:1fr 1.05fr;border-radius:2px;box-shadow:0 1px 2px #0000001a;overflow:hidden}
+.hero-copy{padding:clamp(20px,3vw,36px);background:#fff}
+.hero .eyebrow{color:#2874f0;font-size:10px;font-weight:700}
+.hero h1{font-family:Arial,Helvetica,sans-serif;font-size:clamp(32px,3.5vw,48px);font-weight:700;line-height:1.08;letter-spacing:-1.4px;color:#212121;margin:10px 0}
+.hero h1 em{color:#2874f0;font-style:normal}
+.hero-copy>p{font-size:13px;line-height:1.5;color:#555;max-width:390px}
+.hero .primary{background:#fb641b!important;border-color:#fb641b!important;border-radius:2px;font-size:12px;padding:12px 20px}
+.hero .proof{font-size:10px;gap:12px}
+.hero-art{min-height:250px;background-color:#e8f1ff;background-position:center;background-size:cover}
+.hero-art .editorial{display:none}
+.hero-art .sun{background:#ffe500;opacity:.45}
+.hero-art .floating{border:3px solid white;border-radius:2px;box-shadow:0 4px 18px #0002}
+.hero-art .sticker{background:#fb641b;border-color:#ffe500;border-radius:50%;font-size:10px}
+.benefits{margin:0 12px 12px;padding:12px 18px;border-radius:2px;box-shadow:0 1px 2px #00000012;gap:0}
+.benefits>div{padding:4px 16px;gap:10px}
+.benefits svg{color:#2874f0;width:23px}
+.benefits b{font-size:12px}.benefits small{font-size:10px;color:#878787}
+.deal-banner{margin:0 12px 12px;padding:13px 18px;border-radius:2px;box-shadow:0 1px 2px #00000012}
+.deal-banner b{font-size:18px;color:#212121}.deal-banner small{font-size:11px}
+.deal-icon{background:#fff2e8;color:#fb641b;border-radius:2px}
+.deal-banner>button{background:#2874f0;border-radius:2px;font-size:12px}
+.collection,.recent-section{margin:0 12px 12px;padding:18px;background:#fff;border-radius:2px;box-shadow:0 1px 2px #00000014}
+.section-title{align-items:center;padding-bottom:13px}
+.section-title .eyebrow{color:#2874f0;font-weight:700}
+.section-title h2{font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;letter-spacing:-.3px;margin:5px 0;color:#212121}
+.section-title h2 em{font-style:normal;color:#212121}
+.section-title p{font-size:11px;color:#878787}
+.filters{gap:6px;margin:12px 0 16px}
+.pill{border:1px solid #e0e0e0;border-radius:2px;padding:8px 11px;font-size:11px;color:#212121}
+.pill.active{background:#2874f0;color:#fff;border-color:#2874f0}
+.result{color:#878787;font-size:11px}
+.sort{border-radius:2px;border-color:#ddd}
+.grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid #f0f0f0;border-left:1px solid #f0f0f0}
+.product{border:0;border-right:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;border-radius:0;padding:12px 12px 14px;box-shadow:none;background:#fff}
+.product:hover{box-shadow:inset 0 0 0 1px #d8e5fb;transform:none;z-index:1}
+.photo{height:clamp(150px,16vw,205px);margin:0;background:#fff!important}
+.product-photo-img{padding:8px}
+.tag{background:#388e3c;color:#fff;border-radius:1px;font-size:8px}
+.heart{border-radius:50%;background:#fff}
+.product-title{font-size:13px;line-height:1.35;font-weight:500;margin:7px 0 5px}
+.product-title:hover{color:#2874f0}
+.product .desc{font-size:10px;line-height:1.45;color:#878787;min-height:27px}
+.price{gap:6px}.price b{font-size:15px;font-weight:700}.price del{font-size:10px;color:#878787}.price span{color:#388e3c;font-size:10px;font-weight:700}
+.delivery-note{font-size:9px;color:#878787}
+footer{background:#172337;color:#fff;padding:30px max(18px,calc((100vw - 1240px)/2)) 18px}
+footer p,.footlinks button,.footer-categories button{color:#d5dbe5}
+.footbrand .mark{background:#ffe500;color:#2874f0}
+.footbrand{color:#fff}
+.copyright{border-color:#344052;color:#aab3c2}
+.product-detail,.detail,.drawer{border-radius:2px}
+.primary,.button-primary{border-radius:2px}
+.filter-panel{border-radius:2px}
+@media(max-width:1050px){header{gap:10px;padding:0 14px}header nav{gap:9px}header nav button{font-size:11px}.search{width:clamp(170px,23vw,300px)}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.announce{height:24px;font-size:9px}header{height:auto;min-height:62px;padding:10px 12px;gap:9px;flex-wrap:wrap}.brand{font-size:20px}.brand small{font-size:6px}.hamb{display:block;border:0;background:transparent;padding:4px}.actions{margin-left:auto}.actions .search{order:3;width:100%;flex:1 0 100%;height:38px}.actions{display:contents}.voice-language{max-width:72px}.icon{padding:6px}.bag{padding:9px}.bag span{display:none}header nav{display:none;position:absolute;top:100%;left:0;right:0;padding:10px 14px;background:#2874f0;box-shadow:0 5px 10px #0002;flex-direction:column;align-items:stretch;z-index:8}header nav.open{display:flex}header nav button{text-align:left;padding:10px;border-bottom:1px solid #ffffff22}.app>main{padding-top:8px}.category-strip{margin:0 8px 8px;padding:10px 7px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.category-strip button span{width:42px;height:42px;font-size:24px}.category-strip button b{font-size:10px}.hero{margin:0 8px 8px;grid-template-columns:1fr;min-height:0}.hero-copy{padding:22px}.hero h1{font-size:35px}.hero-art{min-height:170px}.benefits{margin:0 8px 8px;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:10px}.benefits>div{border:0;padding:4px;gap:7px}.benefits svg{width:20px}.benefits b{font-size:10px}.benefits small{font-size:9px}.deal-banner{margin:0 8px 8px;padding:11px;gap:8px}.deal-banner b{font-size:14px}.deal-banner small{font-size:9px}.deal-icon{width:34px;height:34px}.deal-banner>button{padding:9px;font-size:10px;white-space:nowrap}.collection,.recent-section{margin:0 8px 8px;padding:12px}.section-title h2{font-size:19px}.section-title p{font-size:10px}.filters{flex-wrap:wrap}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product{padding:8px}.photo{height:clamp(125px,42vw,190px)}.product-title{font-size:12px}.product .desc{min-height:0}.price{flex-wrap:wrap}.recent-row{grid-template-columns:repeat(2,minmax(0,1fr))}footer{padding:24px 14px 16px}}
