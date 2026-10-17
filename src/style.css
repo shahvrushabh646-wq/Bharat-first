@@ -250,3 +250,29 @@ footer p,.footlinks button,.footer-categories button{color:#d5dbe5}
 .promo-symbol{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;font-size:22px;font-weight:700}
 .promo-orange{background:#fff0e7;color:#f57224}.promo-blue{background:#eaf1ff;color:#2874f0}.promo-green{background:#e8f7ed;color:#24894b}.promo-purple{background:#f4eafe;color:#8b4bc1}
 @media(max-width:760px){.marketplace-promo{margin:0 8px 8px;padding:12px}.marketplace-promo-heading h2{font-size:16px}.marketplace-promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.marketplace-promo-grid>button{padding:10px 8px;border-bottom:1px solid #eee}.marketplace-promo-grid>button:nth-child(2){border-right:0}.marketplace-promo-grid>button:nth-child(3),.marketplace-promo-grid>button:nth-child(4){border-bottom:0}.promo-symbol{width:32px;height:32px;font-size:18px}.marketplace-promo-grid b{font-size:11px}.marketplace-promo-grid small{font-size:9px}}
+
+
+/* Marketplace fidelity pass — sharper category navigation, product photography and compact controls */
+.category-strip{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:0;margin:12px 12px 0;padding:12px 18px;background:#fff;box-shadow:0 1px 2px #00000012;border-radius:2px}
+.category-strip button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;min-width:0;border:0;background:transparent;color:#212121;padding:4px 6px;transition:color .15s,transform .15s}
+.category-strip button:hover{color:#2874f0;transform:translateY(-2px)}
+.category-strip button span{width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:#f1f5ff;font-size:29px;transition:background .15s}
+.category-strip button:hover span{background:#e5efff}
+.category-strip button b{font-size:12px;font-weight:600;text-align:center;white-space:nowrap}
+.marketplace-promo{margin-top:12px}
+.hero{margin-top:12px}
+.product-photo-img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;display:block;transition:transform .2s}
+.product:hover .product-photo-img{transform:scale(1.045)}
+.emoji-btn{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent;display:grid;place-items:center;overflow:hidden}
+.photo-emoji{position:absolute;z-index:0;pointer-events:none;opacity:.0}
+.compare-chip{position:absolute;right:8px;bottom:48px;z-index:2;display:flex;align-items:center;gap:4px;padding:5px 7px;border:1px solid #dfe5ee;background:#ffffffed;color:#2874f0;border-radius:2px;font-size:9px;opacity:0;transition:opacity .15s}
+.product:hover .compare-chip,.compare-chip:focus-visible{opacity:1}
+.quick{z-index:3;bottom:8px;box-shadow:0 1px 3px #0000000b}
+.delivery-note{display:flex;align-items:center;gap:4px;margin-top:9px;padding-top:7px;border-top:1px solid #f3f3f3}
+.product-title{display:block;width:100%;border:0;background:transparent;color:#212121;text-align:left;padding:0;cursor:pointer}
+.product-title:focus-visible{outline:2px solid #2874f0;outline-offset:3px}
+.announce{height:auto;min-height:30px;display:flex;align-items:center;justify-content:center;gap:7px}
+header nav button{padding:8px 0}
+@media(min-width:1200px){.category-strip{padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px)}.hero{min-height:300px}.hero-copy{padding-left:clamp(36px,7vw,100px)}.marketplace-promo-grid>button{padding:15px 18px}.collection,.recent-section{padding:22px}.photo{height:205px}}
+@media(max-width:1050px){.category-strip{grid-template-columns:repeat(8,minmax(70px,1fr));overflow-x:auto;padding:10px 8px}.category-strip button span{width:46px;height:46px;font-size:25px}.category-strip button b{font-size:10px}.marketplace-promo-grid>button{gap:7px;padding:10px 8px}.marketplace-promo-grid b{font-size:11px}}
+@media(max-width:760px){.category-strip{grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;margin:0 8px 8px;padding:10px 7px}.category-strip button span{width:42px;height:42px;font-size:24px}.category-strip button b{font-size:10px}.marketplace-promo{margin-top:0}.hero{margin-top:0}.compare-chip{opacity:1;right:5px;bottom:43px;padding:4px 5px;font-size:8px}.product-photo-img{padding:4px}.product:hover .product-photo-img{transform:none}.quick{left:5px;right:5px}.announce{font-size:9px;min-height:24px}.marketplace-promo-heading{align-items:flex-start}.marketplace-live{font-size:9px;padding:6px 7px}}
