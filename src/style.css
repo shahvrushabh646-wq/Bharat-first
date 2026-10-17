@@ -276,3 +276,45 @@ header nav button{padding:8px 0}
 @media(min-width:1200px){.category-strip{padding-left:clamp(22px,5vw,80px);padding-right:clamp(22px,5vw,80px)}.hero{min-height:300px}.hero-copy{padding-left:clamp(36px,7vw,100px)}.marketplace-promo-grid>button{padding:15px 18px}.collection,.recent-section{padding:22px}.photo{height:205px}}
 @media(max-width:1050px){.category-strip{grid-template-columns:repeat(8,minmax(70px,1fr));overflow-x:auto;padding:10px 8px}.category-strip button span{width:46px;height:46px;font-size:25px}.category-strip button b{font-size:10px}.marketplace-promo-grid>button{gap:7px;padding:10px 8px}.marketplace-promo-grid b{font-size:11px}}
 @media(max-width:760px){.category-strip{grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;margin:0 8px 8px;padding:10px 7px}.category-strip button span{width:42px;height:42px;font-size:24px}.category-strip button b{font-size:10px}.marketplace-promo{margin-top:0}.hero{margin-top:0}.compare-chip{opacity:1;right:5px;bottom:43px;padding:4px 5px;font-size:8px}.product-photo-img{padding:4px}.product:hover .product-photo-img{transform:none}.quick{left:5px;right:5px}.announce{font-size:9px;min-height:24px}.marketplace-promo-heading{align-items:flex-start}.marketplace-live{font-size:9px;padding:6px 7px}}
+
+
+/* Shopora 360° viewer — draggable image frames, angle scrubber and real-frame upload */
+.holoview{margin-top:14px;padding:18px;background:#fff;border:1px solid #e5eaf2;box-shadow:0 2px 10px #17233708;border-radius:3px}
+.holo-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.holo-kicker{display:flex;align-items:center;gap:6px;color:#2874f0;font-size:10px;font-weight:800;letter-spacing:.8px}
+.holo-head h3{font-size:20px;line-height:1.25;margin:8px 0 5px;color:#172337}
+.holo-head p{margin:0;color:#6e7786;font-size:11px;line-height:1.5}
+.holo-live{white-space:nowrap;padding:7px 9px;font-size:9px;font-weight:800;letter-spacing:.5px;border-radius:2px}
+.holo-live.holo-real{color:#16763a;background:#e9f8ee;border:1px solid #bfe9ca}
+.holo-live.holo-demo{color:#8a5b12;background:#fff6df;border:1px solid #f0dfae}
+.holo-stage{position:relative;min-height:300px;height:clamp(270px,35vw,420px);display:grid;place-items:center;overflow:hidden;touch-action:pan-y;cursor:ew-resize;user-select:none;background:radial-gradient(ellipse at 50% 48%,#ffffff 0,#f5f8ff 40%,#e6efff 100%);border:1px solid #e8edf7}
+.holo-ring{position:absolute;border:1px solid #2874f033;border-radius:50%;width:230px;height:230px;transform:rotateX(68deg)}
+.ring-one{width:270px;height:270px}.ring-two{width:205px;height:205px;transform:rotateX(68deg) rotateZ(35deg)}
+.holo-beam{position:absolute;bottom:17%;left:24%;right:24%;height:18px;border-radius:50%;background:#2874f02b;filter:blur(13px)}
+.holo-object{position:relative;z-index:2;width:min(62%,300px);height:min(70%,285px);display:grid;place-items:center;transition:transform .12s ease-out;transform-style:preserve-3d;pointer-events:none}
+.holo-object img{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 18px 13px #243c6b1b);pointer-events:none}
+.holo-object span{position:absolute;z-index:1;font-size:clamp(64px,9vw,110px);opacity:.08;pointer-events:none}
+.holo-object.has-real-frames img{filter:drop-shadow(0 14px 10px #243c6b15)}
+.holo-object.has-real-frames span{display:none}
+.holo-object.single-frame{transition:transform .15s ease-out}
+.holo-scan{position:absolute;z-index:3;left:0;right:0;top:0;height:1px;background:#2874f025;box-shadow:0 0 12px #2874f055;animation:holoScan 4.5s linear infinite;pointer-events:none}
+@keyframes holoScan{from{top:5%;opacity:.2}50%{opacity:.8}to{top:95%;opacity:.2}}
+.holo-caption{position:absolute;bottom:13px;left:50%;transform:translateX(-50%);white-space:nowrap;color:#62718a;font-size:9px;letter-spacing:1px;font-weight:800;pointer-events:none}
+.holo-turn{position:absolute;z-index:4;top:50%;transform:translateY(-50%);width:38px;height:38px;border:1px solid #dce5f4;border-radius:50%;display:grid;place-items:center;background:#ffffffeb;color:#2874f0;box-shadow:0 2px 8px #17233710}
+.holo-turn:hover{background:#2874f0;color:white}.holo-turn-left{left:12px}.holo-turn-right{right:12px}
+.holo-controls{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}
+.holo-controls button{display:flex;align-items:center;gap:6px;border:1px solid #dce2eb;background:#fff;color:#5e6879;border-radius:2px;padding:9px 12px;font-size:10px}
+.holo-controls button.selected{background:#eaf1ff;border-color:#2874f0;color:#2874f0;font-weight:800}
+.holo-angle-row{display:grid;grid-template-columns:auto minmax(80px,1fr) auto auto;align-items:center;gap:10px;color:#687386;font-size:10px;margin:12px 0 16px}
+.holo-angle-row input{width:100%;accent-color:#2874f0;cursor:ew-resize}
+.holo-angle-row output{min-width:38px;text-align:right;color:#172337;font-weight:800;font-variant-numeric:tabular-nums}
+.holo-upload{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1px dashed #cbd8eb;background:#f8faff;padding:12px}
+.holo-upload>div{flex:1;min-width:180px}
+.holo-upload b{display:flex;align-items:center;gap:6px;color:#253650;font-size:11px}
+.holo-upload b svg{color:#2874f0}
+.holo-upload small{display:block;color:#798397;font-size:10px;line-height:1.5;margin-top:5px}
+.holo-upload .secondary{white-space:nowrap}
+.holo-clear{border:0;background:transparent;color:#b04c4c;font-size:10px;padding:8px}
+.holo-note{display:block;color:#8a93a2;font-size:9px;line-height:1.65;margin-top:10px}
+@media(max-width:760px){.holoview{padding:12px}.holo-head h3{font-size:17px}.holo-stage{height:300px;min-height:260px}.holo-object{width:68%;height:68%}.holo-turn{width:34px;height:34px}.holo-turn-left{left:7px}.holo-turn-right{right:7px}.holo-caption{font-size:8px;letter-spacing:.5px}.holo-upload{align-items:stretch}.holo-upload>div{flex-basis:100%}.holo-upload .secondary{justify-content:center}.holo-angle-row{gap:7px}}
+@media(prefers-reduced-motion:reduce){.holo-scan{animation:none}}
